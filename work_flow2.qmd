@@ -1,0 +1,130 @@
+---
+format:
+  html:
+   page-layout: article
+---
+
+### Cloud Migration Flow Chart
+
+::::: {.grid .column-screen-inset}
+
+:::: {.g-col-12 .g-col-md-8}
+
+
+```{ojs}
+//| echo: false
+last_year="2024-2025"
+data_file_node="N[\\"+last_year+" data csv file\\]"
+meta_file_node="M[\\"+last_year+" metadata csv file\\]"
+
+html`<style>
+:root{
+--mermaid-label-fg-color: #000;
+--mermaid-fg-color--lightest: #fff;
+--mermaid-fg-color--lighter: #fff;
+}
+</style>
+`
+
+mermaid`
+flowchart TD
+subgraph <b></b>
+  direction LR
+  subgraph <i>Legend</i>
+  direction LR
+   L1(Data Characteristic) ~~~ L3(Decision) ~~~ L4(Data) ~~~ L5(Action)
+end
+subgraph <br>
+  direction TB
+   Z1(Cloud Migration Decision Tree) --> B{"How will<br>the file<br>be accessed?"}
+   B --> Z(Individual Use Only)
+   B --> E(Used for<br>analysis or Collaboration)
+   Z --> C{Is the data<br>small,<br>not active?}
+   E --> F{How large<br>is the data?}
+   C --Yes--> D(Store in Google Drive)
+   C --No--> F
+   F --> G(Large)
+   G --> I{Actively<br>worked on<br>collaboratively}
+   G --> J{Requires<br>Specific<br>Application}
+   I --Yes--> P{Privacy<br>concerns?}
+   I --No--> R{Persistance?}
+   J --Yes--> P{Privacy<br>concerns?}
+   J --No--> R{Persistance?}
+   F --> H(Moderate)
+     end
+end
+
+  classDef top fill:#fff,stroke:#4682b4,stroke-width:4px,color:#000;
+  classDef htm fill:#4682b4,stroke:#333,stroke-width:2px,color:#fff;
+  classDef menu fill:#ffffc5,stroke:#333,stroke-width:2px,color:#000;
+  classDef data fill:#add8e6,stroke:#333,stroke-width:2px,color:#000;
+  classDef action fill:#ffcccb,stroke:#333,stroke-width:2px,color:#000;
+  classDef decision fill:#d4e6f9,stroke:#333,stroke-width:2px,color:#000;
+  class Z1 top
+  class Z,E,H,L,G,L1 htm
+  class T,P,W,X,L2 menu
+  class B,C,K1,F,I,J,O,S,Y,L3 decision
+  class K,M,N,R,V,L4 data
+  class D,Q,U,L5 action
+ `
+
+```
+
+::::
+
+:::: {.g-col-12 .g-col-md-4 .g-row-6  style="display: grid; row-gap: 50px;"}
+
+::: {style="background-color: #fff;padding:5px;border:solid,0px;"}
+
+:::
+
+::: {style="background-color: #ffffc5;padding:10px;border:solid,1px;"}
+
+**Start:** You have data or files to store. Is the data/file for individual use only, or for analysis or collaboration with others?
+
+
+:::
+
+::: {style="background-color: #ffffc5;padding:10px;border:solid,1px;"}
+
+**Next:** File Access
+
+* **Is the data/file for individual use only, or for analysis or collaboration with others?**
+  + Individual Use Only (e.g., work-in-progress, personal documents)
+  + Analysis/Collaboration/Sharing Needed (e.g., for team analysis, broad accessibility)
+
+:::
+
+::: {style="background-color: #ffffc5;padding:10px;border:solid,1px;"}
+
+**Individual Use:**
+
+Dataset/file is very small, not actively being worked on for analysis by others, and does not require broad accessibility, or is transient work-in-progress
+
+Store in Google Drive (Personal Folder). (Best for individual work-in-progress, personal documents, or very small datasets/files. Limited accessibility, free for standard limits, suitable for long-term preservation within these limits, but not ideal for large datasets or application-dependent data).
+
+:::
+
+::: {style="background-color: #ffffc5;padding:10px;border:solid,1px;"}
+
+**Size of the dataset/file:**
+
+* Actively worked on for analysis by others, and does it require specific applications or databases to access/process it
+  + Large Dataset OR Actively Worked On for Analysis by Others OR Requires Specific Applications/Databases
+  + Moderate Size AND Not Actively Worked On for Analysis by Others AND Does NOT Require Specific Applications/Databases
+
+:::
+
+::: {style="background-color: #ffffc5;padding:10px;border:solid,1px;"}
+
+**End**
+
+
+
+:::
+
+
+::::
+
+:::::
+

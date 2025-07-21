@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "cloud-migration",
+    "section": "",
+    "text": "SWFSC Cloud Migration Flow Chart",
+    "crumbs": [
+      "SWFSC Cloud Migration Flow Chart"
+    ]
+  },
+  {
+    "objectID": "index.html#work-in-progress",
+    "href": "index.html#work-in-progress",
+    "title": "cloud-migration",
+    "section": "Work in progress!!",
+    "text": "Work in progress!!\n\nMotivation\n\nNMFS on-prem servers decomissioned 12/2026\nstaff departure\n\n\n\nGoals\n\ndata preservation\nincrease collaboration\nreduce data silos\n\n\n\nConsiderations\n\nusers\nsize of data\nneed specific application?\ndata organization?\nactively worked on or just needing archiving?\ncomplexity\nfind-ability\npotential cost",
+    "crumbs": [
+      "SWFSC Cloud Migration Flow Chart"
+    ]
+  },
+  {
+    "objectID": "work_flow1.html",
+    "href": "work_flow1.html",
+    "title": "1  Cloud Migration Flow Chart",
+    "section": "",
+    "text": "last_year=\"2024-2025\"\ndata_file_node=\"N[\\\\\"+last_year+\" data csv file\\\\]\"\nmeta_file_node=\"M[\\\\\"+last_year+\" metadata csv file\\\\]\"\n\nhtml`&lt;style&gt;\n:root{\n--mermaid-label-fg-color: #000;\n--mermaid-fg-color--lightest: #fff;\n--mermaid-fg-color--lighter: #fff;\n}\n&lt;/style&gt;\n`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmermaid`\nflowchart TD\nsubgraph &lt;b&gt;&lt;/b&gt;\n  direction LR\n  subgraph &lt;i&gt;Legend&lt;/i&gt;\n  direction LR\n   L1(Data Characteristic) ~~~ L3(Decision) ~~~ L4(Data) ~~~ L5(Action)\nend\nsubgraph &lt;br&gt;\n  direction TB\n   Z1(Cloud Migration Decision Tree) --&gt; B{\"How will&lt;br&gt;the data&lt;br&gt;be accessed?\"}\n   B --&gt; Z(Individual Use Only)\n   B --&gt; E(Used for&lt;br&gt;analysis or Collaboration)\n   Z --&gt; C{Is the data&lt;br&gt;small,&lt;br&gt;not active?}\n   E --&gt; F{How large&lt;br&gt;is the data?}\n   C --Yes--&gt; D(\"Store in&lt;br&gt;Google Drive&lt;br&gt;(Personal Folder)\")\n   C --No--&gt; F\n   F --&gt; G(Large)\n   G --&gt; I{Actively&lt;br&gt;worked on?}\n   I --Yes--&gt;  J{Requires&lt;br&gt;specific&lt;br&gt;application?}\n   I -.No.-&gt; L(?)\n   J --Yes--&gt;  S(Store in&lt;br&gt;GCP)\n   S --&gt; T(Examine&lt;br&gt;Privacy&lt;br&gt;Concerns)\n   J -.No.-&gt; L(?)\n   F --&gt; H(Moderate)\n   H --&gt; K{Actively&lt;br&gt;worked on?}\n   K --No--&gt; M{Requires&lt;br&gt;specific&lt;br&gt;application?}\n   K -.Yes.-&gt; R(?)\n   M --No--&gt; N{Persists&lt;br&gt;beyond&lt;br&gt;tenure?}\n   M -.Yes.-&gt; R(?)\n   N --Yes--&gt; O(Store in Google&lt;br&gt;Shared Drive)\n   N --No--&gt; Q(\"Re-evaluate Google&lt;br&gt;Drive (Personal Folder)\")\n     end\nend\n\n  classDef top fill:#fff,stroke:#4682b4,stroke-width:4px,color:#000;\n  classDef htm fill:#4682b4,stroke:#333,stroke-width:2px,color:#fff;\n  classDef menu fill:#ffffc5,stroke:#333,stroke-width:2px,color:#000;\n  classDef data fill:#add8e6,stroke:#333,stroke-width:2px,color:#000;\n  classDef action fill:#ffcccb,stroke:#333,stroke-width:2px,color:#000;\n  classDef decision fill:#d4e6f9,stroke:#333,stroke-width:2px,color:#000;\n  class Z1 top\n  class Z,E,H,L,R,G,L1 htm\n  class P,W,X,L2 menu\n  class B,C,K,F,I,J,M,N,Y,L3 decision\n  class V,L4 data\n  class D,S,T,O,Q,L5 action\n `\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nStart: You have data or files to store. Is the data/file for individual use only, or for analysis or collaboration with others?\n\n\nNext: File Access\n\nIs the data/file for individual use only, or for analysis or collaboration with others?\n\nIndividual Use Only (e.g., work-in-progress, personal documents)\nAnalysis/Collaboration/Sharing Needed (e.g., for team analysis, broad accessibility)\n\n\n\n\nIndividual Use:\nDataset/file is very small, not actively being worked on for analysis by others, and does not require broad accessibility, or is transient work-in-progress\nStore in Google Drive (Personal Folder). (Best for individual work-in-progress, personal documents, or very small datasets/files. Limited accessibility, free for standard limits, suitable for long-term preservation within these limits, but not ideal for large datasets or application-dependent data).\nAnalysis/Collaboration/Sharing Needed (e.g., for team analysis, broad accessibility)\n\n\nSize of the dataset/file:\n\nActively worked on for analysis by others, and does it require specific applications or databases to access/process it\n\nLarge Dataset OR Actively Worked On for Analysis by Others OR Requires Specific Applications/Databases\nModerate Size AND Not Actively Worked On for Analysis by Others AND Does NOT Require Specific Applications/Databases\n\n\n\n\nPrivacy/accessibility requirements (e.g., public, internal, restricted)? Highly Restricted/Private Data OR Ultimately Intended for Broad Analytical Access: Store in Google Cloud Platform (GCP). (Essential for extremely large datasets, databases, high-performance computing, long-term archival, or integration with specific applications. Highly configurable access controls, involves direct costs, requires more technical expertise).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cloud Migration Flow Chart</span>"
+    ]
+  }
+]

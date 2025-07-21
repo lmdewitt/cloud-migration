@@ -1,0 +1,21 @@
+# SWFSC Cloud Migration Flow Chart {.unnumbered}
+## Work in progress!!
+
+### Motivation
+  * NMFS on-prem servers decomissioned 12/2026
+  * staff departure
+
+### Goals
+  * data preservation
+  * increase collaboration
+  * reduce data silos
+
+### Considerations
+  * users
+  * size of data
+  * need specific application?
+  * data organization?
+  * actively worked on or just needing archiving?
+  * complexity
+  * find-ability
+  * potential cost

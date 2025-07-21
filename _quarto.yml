@@ -1,0 +1,19 @@
+project:
+  type: book
+
+book:
+  title: "cloud-migration"
+  author: "Lynn deWitt"
+  date: "7/15/2025"
+  chapters:
+    - index.qmd
+    - work_flow1.qmd
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
