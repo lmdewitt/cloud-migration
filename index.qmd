@@ -33,11 +33,17 @@
 ### Potential resources:
 
 <https://www.earthdata.nasa.gov/data/tools/which-data-tool-right-for-you>
+
 <https://nmfs-opensci.github.io/ResourceBook/>
+
 <https://github.com/orgs/nmfs-openscapes/projects/46/views/6?pane=issue&itemId=102584748&issue=nmfs-openscapes%7Chow-we-work%7C35>
+
 <https://2025julyesipmeeting.sched.com/event/25ehj/archive-your-first-or-second-data-set-south-room-3rd-flr>
+
 <https://intertidalagency.github.io/ia-guides-resources/repository_criteria.html>
+
 <https://guide.cloudnativegeo.org/>
+
 <https://nasa-openscapes.github.io/earthdata-cloud-cookbook/>
 
 ### Notes: Decision tree for moving on-prem data to the cloud
