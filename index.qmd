@@ -30,4 +30,90 @@
   * and/or if you have a relevant app that is in aws/azure altho again that’s not primary for most. 
   * Also adding in the EDM group’s high priority initiatives (preservation data)
 
+### Potential resources:
+
+<https://www.earthdata.nasa.gov/data/tools/which-data-tool-right-for-you>
+<https://nmfs-opensci.github.io/ResourceBook/>
+<https://github.com/orgs/nmfs-openscapes/projects/46/views/6?pane=issue&itemId=102584748&issue=nmfs-openscapes%7Chow-we-work%7C35>
+<https://2025julyesipmeeting.sched.com/event/25ehj/archive-your-first-or-second-data-set-south-room-3rd-flr>
+<https://intertidalagency.github.io/ia-guides-resources/repository_criteria.html>
+<https://guide.cloudnativegeo.org/>
+<https://nasa-openscapes.github.io/earthdata-cloud-cookbook/>
+
+### Notes: Decision tree for moving on-prem data to the cloud
+
+* Decision tree for where people can and should move their data. How to process and where
+ to work with your data - e.g. can be archived or needs to be actively accessed
+  + WIP Wiki: https://github.com/nmfs-opensci/cloud-data-guide/wiki
+  
+* Lynn shared the [tree they started](https://lmdewitt.github.io/cloud-migration/work_flow1.html)
+ 
+* Clarifying Questions
+  + Is there a particular cloud people are moving their data to? 
+     - Not yet, that is what they are hoping to achieve. People have it spread across multiple platforms (AWS or Google) 
+     - Google Cloud Platform, AWS
+  + Goal to have the decision tree nationwide?
+     - Hope so - some bigger data groups have already shifted (i.e. passive acoustics)
+
+* Lucid Chart [Interactive starting point for contributing to the decision tree](https://lucid.app/lucidspark/2a47da05-0730-4e7a-99fa-c4db31d0fca6/edit?viewport_loc=-1567%2C-381%2C1940%2C1007%2C0_0&invitationId=inv_6bd9e614-21b8-4c56-b7c3-623142414244)
+
+* Comments
+  + [Brian] - great idea; I’m aware of the plan to abandon LANs but had no idea there are multiple options to consider. A nice graphic flow chart could be very helpful.
+  + [Brooke] I wonder what the biggest blockers are here. I’m a data consumer rather than a data producer in my current role (so no firsthand experience within NMFS), and I’m wondering how many of the blockers are due to lack of training / awareness, organizational siloes, fear around losing data or needing to move it again as contracts and funding change.
+  + [Erin R] - NASA Openscapes supported this kind of work and has a “when to cloud” 
+  + [Erin R] ESIP Cloud cluster may also have more general resources
+  + [Breakout room] Potential barriers regarding metadata and data tracking for data users 
+  + Issue: as a data user, finding information on most recent data, recent update date
+     - Solution: Have tree for both sides - data creators and data users 
+     - Issue: as a data creator, multiple versions under multiple divisions 
+     - Solution: Create single solution with directory 
+     
+* Group Discussion 
+  + What are the considerations for choosing a cloud and decisions generally? 
+  + You have data and you need to move it to the cloud - where do you put it?
+     - Too many cloud options at this time  
+  + People who need to use data - where do they find it? 
+  + Storing data - by divisions and people 
+     - Move to categories of data for storage 
+     - Shifting to scientific silos/categories for data compared to the individual or division silos 
+     - E.g. trawl surveys, ecosystem data - what categories make sense? 
+     - Or perhaps type vs. size ? Categorize based on size instead 
+     - Where do we find data if we categorize it by descriptive characteristics? 
+   + Dashboard & documentation to find specific data 
+   + Separate finding the data (living and updated document) and storing the data  
+     - Would be nice to be able to find all of the “X” type of data if doing a larger study, for example finding all of the hake data 
+  
+  + [Erin S]  - /https://media.fisheries.noaa.gov/dam-migration/04-111.pdf - a lot of this diagram reminds me out the mental gymnastics involved with sorting out cloud data storage - maybe we can leverage the thinking there?
+  + How will data be accessed? Is it used for collaboration? How large is it? Privacy requirements? 
+  + When getting to the use of the data actively and its upkeep the tree diverges and becomes more complicated 
+  + We can work on adding to the bottom of the tree or we can go deeper on some of the existing decisions 
+  + Actively worked on - why should we separate it ? we can create a reproducible and documented workflow for if anyone wants to use the data at any time 
+     - Actively worked on is a distinction that may help due to time sensitivity and storage requirements 
+  + How large? How active? Defining these components 
+  + Discoverability - do you want people to be able to use and access the data? Is it more protected? 
+  + Archived versus served even if data is no longer being updated. Archived might not necessarily mean easy to access or might require downloading. Does data need a DOI?
+  + Does it need to be AI ready? If so that means GCP probably.
+  + Listing specific applications 
+  + Directed to use Google Cloud Platform due to deal provided to NOAA
+  
+* Use Cases - applications
+  + A questionnaire or survey would be helpful to gauge the scientists for which cases are most relevant 
+     - GIS applications
+     - QAQC for cruise data)
+     - Other applications could have similar issue
+     
+* What do we want to understand better?
+  + Cloud options and the technical and financial logistics associated with cloud platforms and usage 
+  + Who are the users at this time? In the future? 
+  + How large are the data? 
+  + Is it a one off data set or a long term time series? 
+  + Archived vs. actively worked on
+  + Does it require specific connections (e.g. APIs)?
+  + Will it exist beyond the tenure of the person working on it? (data preservation)
+  + Accessibility, discoverability
+  + Complexity - excel spreadsheet vs. alternate format; single vs. many files
+  + When people can work on their personal computers - but also needs to be documented and shared where necessary
+  
+
+
 

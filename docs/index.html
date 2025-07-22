@@ -137,6 +137,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#considerations" id="toc-considerations" class="nav-link" data-scroll-target="#considerations">Considerations</a></li>
   <li><a href="#also-need-more-details-in-the-flow-about" id="toc-also-need-more-details-in-the-flow-about" class="nav-link" data-scroll-target="#also-need-more-details-in-the-flow-about">Also need more details in the flow about</a></li>
+  <li><a href="#potential-resources" id="toc-potential-resources" class="nav-link" data-scroll-target="#potential-resources">Potential resources:</a></li>
+  <li><a href="#notes-decision-tree-for-moving-on-prem-data-to-the-cloud" id="toc-notes-decision-tree-for-moving-on-prem-data-to-the-cloud" class="nav-link" data-scroll-target="#notes-decision-tree-for-moving-on-prem-data-to-the-cloud">Notes: Decision tree for moving on-prem data to the cloud</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -218,6 +220,106 @@ ul.task-list li input[type="checkbox"] {
 <li>Could be customized for the FMCs who have data in OCI.</li>
 <li>and/or if you have a relevant app that is in aws/azure altho again that’s not primary for most.</li>
 <li>Also adding in the EDM group’s high priority initiatives (preservation data)</li>
+</ul>
+</section>
+<section id="potential-resources" class="level3">
+<h3 class="anchored" data-anchor-id="potential-resources">Potential resources:</h3>
+<p><a href="https://www.earthdata.nasa.gov/data/tools/which-data-tool-right-for-you" class="uri">https://www.earthdata.nasa.gov/data/tools/which-data-tool-right-for-you</a> <a href="https://nmfs-opensci.github.io/ResourceBook/" class="uri">https://nmfs-opensci.github.io/ResourceBook/</a> <a href="https://github.com/orgs/nmfs-openscapes/projects/46/views/6?pane=issue&amp;itemId=102584748&amp;issue=nmfs-openscapes%7Chow-we-work%7C35" class="uri">https://github.com/orgs/nmfs-openscapes/projects/46/views/6?pane=issue&amp;itemId=102584748&amp;issue=nmfs-openscapes%7Chow-we-work%7C35</a> <a href="https://2025julyesipmeeting.sched.com/event/25ehj/archive-your-first-or-second-data-set-south-room-3rd-flr" class="uri">https://2025julyesipmeeting.sched.com/event/25ehj/archive-your-first-or-second-data-set-south-room-3rd-flr</a> <a href="https://intertidalagency.github.io/ia-guides-resources/repository_criteria.html" class="uri">https://intertidalagency.github.io/ia-guides-resources/repository_criteria.html</a> <a href="https://guide.cloudnativegeo.org/" class="uri">https://guide.cloudnativegeo.org/</a> <a href="https://nasa-openscapes.github.io/earthdata-cloud-cookbook/" class="uri">https://nasa-openscapes.github.io/earthdata-cloud-cookbook/</a></p>
+</section>
+<section id="notes-decision-tree-for-moving-on-prem-data-to-the-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="notes-decision-tree-for-moving-on-prem-data-to-the-cloud">Notes: Decision tree for moving on-prem data to the cloud</h3>
+<ul>
+<li><p>Decision tree for where people can and should move their data. How to process and where to work with your data - e.g.&nbsp;can be archived or needs to be actively accessed</p>
+<ul>
+<li>WIP Wiki: https://github.com/nmfs-opensci/cloud-data-guide/wiki</li>
+</ul></li>
+<li><p>Lynn shared the <a href="https://lmdewitt.github.io/cloud-migration/work_flow1.html">tree they started</a></p></li>
+<li><p>Clarifying Questions</p>
+<ul>
+<li>Is there a particular cloud people are moving their data to?
+<ul>
+<li>Not yet, that is what they are hoping to achieve. People have it spread across multiple platforms (AWS or Google)</li>
+<li>Google Cloud Platform, AWS</li>
+</ul></li>
+<li>Goal to have the decision tree nationwide?
+<ul>
+<li>Hope so - some bigger data groups have already shifted (i.e.&nbsp;passive acoustics)</li>
+</ul></li>
+</ul></li>
+<li><p>Lucid Chart <a href="https://lucid.app/lucidspark/2a47da05-0730-4e7a-99fa-c4db31d0fca6/edit?viewport_loc=-1567%2C-381%2C1940%2C1007%2C0_0&amp;invitationId=inv_6bd9e614-21b8-4c56-b7c3-623142414244">Interactive starting point for contributing to the decision tree</a></p></li>
+<li><p>Comments</p>
+<ul>
+<li>[Brian] - great idea; I’m aware of the plan to abandon LANs but had no idea there are multiple options to consider. A nice graphic flow chart could be very helpful.</li>
+<li>[Brooke] I wonder what the biggest blockers are here. I’m a data consumer rather than a data producer in my current role (so no firsthand experience within NMFS), and I’m wondering how many of the blockers are due to lack of training / awareness, organizational siloes, fear around losing data or needing to move it again as contracts and funding change.</li>
+<li>[Erin R] - NASA Openscapes supported this kind of work and has a “when to cloud”</li>
+<li>[Erin R] ESIP Cloud cluster may also have more general resources</li>
+<li>[Breakout room] Potential barriers regarding metadata and data tracking for data users</li>
+<li>Issue: as a data user, finding information on most recent data, recent update date
+<ul>
+<li>Solution: Have tree for both sides - data creators and data users</li>
+<li>Issue: as a data creator, multiple versions under multiple divisions</li>
+<li>Solution: Create single solution with directory</li>
+</ul></li>
+</ul></li>
+<li><p>Group Discussion</p>
+<ul>
+<li>What are the considerations for choosing a cloud and decisions generally?</li>
+<li>You have data and you need to move it to the cloud - where do you put it?
+<ul>
+<li>Too many cloud options at this time<br>
+</li>
+</ul></li>
+<li>People who need to use data - where do they find it?</li>
+<li>Storing data - by divisions and people
+<ul>
+<li>Move to categories of data for storage</li>
+<li>Shifting to scientific silos/categories for data compared to the individual or division silos</li>
+<li>E.g. trawl surveys, ecosystem data - what categories make sense?</li>
+<li>Or perhaps type vs.&nbsp;size ? Categorize based on size instead</li>
+<li>Where do we find data if we categorize it by descriptive characteristics?</li>
+</ul></li>
+<li>Dashboard &amp; documentation to find specific data</li>
+<li>Separate finding the data (living and updated document) and storing the data
+<ul>
+<li>Would be nice to be able to find all of the “X” type of data if doing a larger study, for example finding all of the hake data</li>
+</ul></li>
+<li>[Erin S] - /https://media.fisheries.noaa.gov/dam-migration/04-111.pdf - a lot of this diagram reminds me out the mental gymnastics involved with sorting out cloud data storage - maybe we can leverage the thinking there?</li>
+<li>How will data be accessed? Is it used for collaboration? How large is it? Privacy requirements?</li>
+<li>When getting to the use of the data actively and its upkeep the tree diverges and becomes more complicated</li>
+<li>We can work on adding to the bottom of the tree or we can go deeper on some of the existing decisions</li>
+<li>Actively worked on - why should we separate it ? we can create a reproducible and documented workflow for if anyone wants to use the data at any time
+<ul>
+<li>Actively worked on is a distinction that may help due to time sensitivity and storage requirements</li>
+</ul></li>
+<li>How large? How active? Defining these components</li>
+<li>Discoverability - do you want people to be able to use and access the data? Is it more protected?</li>
+<li>Archived versus served even if data is no longer being updated. Archived might not necessarily mean easy to access or might require downloading. Does data need a DOI?</li>
+<li>Does it need to be AI ready? If so that means GCP probably.</li>
+<li>Listing specific applications</li>
+<li>Directed to use Google Cloud Platform due to deal provided to NOAA</li>
+</ul></li>
+<li><p>Use Cases - applications</p>
+<ul>
+<li>A questionnaire or survey would be helpful to gauge the scientists for which cases are most relevant
+<ul>
+<li>GIS applications</li>
+<li>QAQC for cruise data)</li>
+<li>Other applications could have similar issue</li>
+</ul></li>
+</ul></li>
+<li><p>What do we want to understand better?</p>
+<ul>
+<li>Cloud options and the technical and financial logistics associated with cloud platforms and usage</li>
+<li>Who are the users at this time? In the future?</li>
+<li>How large are the data?</li>
+<li>Is it a one off data set or a long term time series?</li>
+<li>Archived vs.&nbsp;actively worked on</li>
+<li>Does it require specific connections (e.g.&nbsp;APIs)?</li>
+<li>Will it exist beyond the tenure of the person working on it? (data preservation)</li>
+<li>Accessibility, discoverability</li>
+<li>Complexity - excel spreadsheet vs.&nbsp;alternate format; single vs.&nbsp;many files</li>
+<li>When people can work on their personal computers - but also needs to be documented and shared where necessary</li>
+</ul></li>
 </ul>
 
 
