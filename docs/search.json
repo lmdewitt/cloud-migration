@@ -14,7 +14,7 @@
     "href": "index.html#work-in-progress",
     "title": "cloud-migration",
     "section": "Work in progress!!",
-    "text": "Work in progress!!\n\nMotivation\n\nNMFS on-prem servers decomissioned 12/2026\nstaff departure\n\n\n\nGoals\n\ndata preservation\nincrease collaboration\nreduce data silos\n\n\n\nConsiderations\n\nusers\nsize of data\nneed specific application?\ndata organization?\nactively worked on or just needing archiving?\ncomplexity\nfind-ability\npotential cost",
+    "text": "Work in progress!!\n\nMotivation\n\nNMFS on-prem servers decomissioned 12/2026\nstaff departure\n\n\n\nGoals\n\ndata preservation\nincrease collaboration\nreduce data silos\n\n\n\nConsiderations\n\nusers\nsize of data\nneed specific application?\ndata organization?\nactively worked on or just needing archiving?\ncomplexity\nfind-ability\npotential cost\n\n\n\nAlso need more details in the flow about\n\nIs your data one of the Strategic Initiatives? Then it goes elsewhere…\nwhether analysis can/should be done locally or will need to have the data in the cloud for the analysis.\nAddress google workstations… ?\nWhat else?\nCould be customized for the FMCs who have data in OCI.\nand/or if you have a relevant app that is in aws/azure altho again that’s not primary for most.\nAlso adding in the EDM group’s high priority initiatives (preservation data)",
     "crumbs": [
       "SWFSC Cloud Migration Flow Chart"
     ]

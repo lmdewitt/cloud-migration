@@ -19,3 +19,15 @@
   * complexity
   * find-ability
   * potential cost
+  
+  
+### Also need more details in the flow about
+  * Is your data one of the Strategic Initiatives? Then it goes elsewhere… 
+  * whether analysis can/should be done locally or will need to have the data in the cloud for the analysis.
+  * Address google workstations… ? 
+  * What else? 
+  * Could be customized for the FMCs who have data in OCI. 
+  * and/or if you have a relevant app that is in aws/azure altho again that’s not primary for most. 
+  * Also adding in the EDM group’s high priority initiatives (preservation data)
+
+
